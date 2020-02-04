@@ -1,0 +1,47 @@
+.navbar{
+    justify-content: space-between;
+    justify-self: left;
+}
+span{
+    padding-right: 1rem;
+    justify-self: right;
+}
+mat-sidenav-container{
+    height:100%
+}
+mat-sidenav,mat-sidenav-content{
+    padding:16px;
+}
+mat-sidenav{
+    background-color:blue;
+    width:200px;     
+}
+label{
+    font-size:15px;
+    text-emphasis-color: black;
+    color:black;
+
+}
+input{
+    font-size: 15px;
+    
+}
+button{
+    font-size: 15px;
+}
+form{
+    
+ 
+}
+mat-card-content{
+  
+}
+mat-card{
+    
+}
+body{
+  
+}
+/* .ng-invalid .ng-touched {
+border:1px  solid red;
+} */

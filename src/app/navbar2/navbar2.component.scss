@@ -1,0 +1,22 @@
+.view {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMeLXhfTBg2O0rO8etpj3K_ib5Xw7HmHG_XnLn78-9CevOCZJP")no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+a{
+    padding-top: 10px;
+    font-size:22px;
+}
+@media only screen and (max-width: 786px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}

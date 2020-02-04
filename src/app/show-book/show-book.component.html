@@ -1,0 +1,58 @@
+<div class="card-group" >
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let book of bookList">
+          <mdb-card dark="true">
+      
+            <!--Card image-->
+            <div class="view rgba-black-slight waves-light" mdbWavesEffect>
+              <!-- <mdb-card-img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2821%29.jpg"></mdb-card-img> -->
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--/.Card image-->
+      
+            <!--Card content-->
+            <mdb-card-body class="elegant-color white-text">
+              <a class="ma">
+                <!-- <mdb-icon fas icon="share-alt" class="white-text"></mdb-icon> -->
+              </a>
+      
+              <!--Title-->
+              <mdb-card-title> 
+                <div class="colo"></div>
+                <h1>Name:     <div class="colo">{{book.bookTitle}} </div></h1>
+              </mdb-card-title>
+      
+              <hr class="hr-light">
+      
+              <!--Text-->
+      
+              <mdb-card-text class="white-text">
+               <h3 >Subtitle:</h3> <h3 class="colo">{{book.bookSubTitle}}</h3>
+               <h3 >Author:</h3>      <h3 class="colo">  {{book.bookAuthor1}}</h3>
+               <h3 >Author:</h3>        <h3 class="colo"> {{book.bookAuthor2}}</h3>
+               <h3 >Author:</h3>    <h3 class="colo"> {{book.bookAuthor3}}</h3>
+               <h3>Publication:</h3>     <h3 class="colo"> {{book.bookPublisher}}</h3>
+               <h3 >Genre:</h3>     <h3 class="colo"> {{book.bookRadioGenre}}</h3>
+                <hr>
+             <h3>Price:</h3>   <h3 class="colo"> {{book.bookPrice}}</h3>
+              </mdb-card-text>
+              <!-- <button (click)="getBook()">Click to check</button> -->
+              <a href="#!" class="white-text d-flex justify-content-end">
+                <!-- <h5 class="waves-light white-text" mdbWavesEffect>Read more
+                  <span>
+                    <mdb-icon fas icon="chevron-right" class="pl-2 waves-light" mdbWavesEffect></mdb-icon>
+                  </span>
+                </h5> -->
+              </a>
+            </mdb-card-body>
+            <!--/.Card content-->
+          </mdb-card>
+          <!--/.Card-->
+        
+      </div></div>
+    
+     
+      </div>    
+          <!--Card-->
