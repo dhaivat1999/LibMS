@@ -1,0 +1,26 @@
+<table mdbTable hover="true">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Subtitle</th>
+        <th scope="col">Author 1</th>
+        <th scope="col">Author 2</th>
+        <th scope="col">Author 3</th>
+        <th scope="col">Publication</th>
+        <th scope="col">Genre</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr mdbTableCol *ngFor="let book of bookList">
+        <th scope="row">{{book.bookTitle}}</th>
+        <td>{{book.bookSubtitle}}</td>
+        <td>{{book.bookAuthor1}}</td>
+        <td>{{book.bookAuthor2}}</td>
+        <td>{{book.bookAuthor3}}</td>
+        <td>{{book.bookPublication}}</td>
+        <td>{{book.bookRadioGenre}}</td>
+        <td>{{book.bookPrice}}</td>
+      </tr>
+    </tbody>
+  </table>
