@@ -7,7 +7,6 @@ import { AngularFireList } from 'angularfire2/database';
 import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
 import { BehavesubService } from '../../services/behavesub.service';
-import { NavbarsComponent } from './../../layout/navbars/navbars.component';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',

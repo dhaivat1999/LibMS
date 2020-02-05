@@ -21,8 +21,8 @@ import { HttpClientModule,HttpInterceptor, HTTP_INTERCEPTORS } from '@angular/co
 // import { LoginComponent } from './login/login.component';
 // import { ShowBookComponent } from './show-book/show-book.component';
 import { LogoutComponent } from './auth/logout/logout.component';
-// import { FooterComponent } from './footer/footer.component';
-// import { Navbar2Component } from './navbar2/navbar2.component';
+import { FooterComponent } from './footer/footer.component';
+import { Navbar2Component } from './navbar2/navbar2.component';
 import { PhoneLoginComponent } from './non-auth/phone-login/phone-login.component';
 import { Window } from 'selenium-webdriver';
 import { WindowService } from './services/window.service';
@@ -37,13 +37,15 @@ import {AuthGuard } from './auth.guard';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home/home.component';
 import {ShowBook3Component} from './show-book3/show-book3.component';
+import { NavbarsComponent } from './navbars/navbars.component';
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     LogoutComponent,
-    // FooterComponent,
-    // Navbar2Component,
+    FooterComponent,
+    Navbar2Component,
+    NavbarsComponent,
     PhoneLoginComponent,
     AdminComponent,
     HeaderComponent,
