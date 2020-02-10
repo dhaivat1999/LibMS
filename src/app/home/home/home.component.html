@@ -1,3 +1,39 @@
+<!-- <main class="mainClass">
+  <div class="dank-ass-loader" *ngIf='showloader' >
+     <div class="row">
+        <div class="arrow up outer outer-18"></div>
+        <div class="arrow down outer outer-17"></div>
+        <div class="arrow up outer outer-16"></div>
+        <div class="arrow down outer outer-15"></div>
+        <div class="arrow up outer outer-14"></div>
+     </div>
+     <div class="row">
+        <div class="arrow up outer outer-1"></div>
+        <div class="arrow down outer outer-2"></div>
+        <div class="arrow up inner inner-6"></div>
+        <div class="arrow down inner inner-5"></div>
+        <div class="arrow up inner inner-4"></div>
+        <div class="arrow down outer outer-13"></div>
+        <div class="arrow up outer outer-12"></div>
+     </div>
+     <div class="row">
+        <div class="arrow down outer outer-3"></div>
+        <div class="arrow up outer outer-4"></div>
+        <div class="arrow down inner inner-1"></div>
+        <div class="arrow up inner inner-2"></div>
+        <div class="arrow down inner inner-3"></div>
+        <div class="arrow up outer outer-11"></div>
+        <div class="arrow down outer outer-10"></div>
+     </div>
+     <div class="row">
+        <div class="arrow down outer outer-5"></div>
+        <div class="arrow up outer outer-6"></div>
+        <div class="arrow down outer outer-7"></div>
+        <div class="arrow up outer outer-8"></div>
+        <div class="arrow down outer outer-9"></div>
+     </div>
+  </div>
+</main> -->
 <header class="h-100">
     <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="false">
       <mdb-navbar-brand>
@@ -15,12 +51,12 @@
         </ul>
           <ul class="navbar-nav ml-auto">
           <li class="nav-item waves-light" mdbWavesEffect>
-              <a class="nav-link" href="\addbook" *ngIf="checkLogin == true">Add Book</a>
-            <a class="nav-link" href="\signup"  *ngIf="checkLogin == false">Sign Up</a>
+              <a class="nav-link" href="\auth\addbook" *ngIf="checkLogin == true">Add Book</a>
+            <a class="nav-link" href="\non-auth\signup"  *ngIf="checkLogin == false">Sign Up</a>
           </li>
           <li class="nav-item waves-light" mdbWavesEffect>
-                <a class="nav-link" href="\logout" *ngIf="checkLogin == true">Log Out</a>
-            <a class="nav-link" href="\login"  *ngIf="checkLogin == false">Log In</a>
+                <a class="nav-link" href="\auth\logout" *ngIf="checkLogin == true">Log Out</a>
+            <a class="nav-link" href="\non-auth\login"  *ngIf="checkLogin == false">Log In</a>
           </li>
         </ul>
       </links>
@@ -54,11 +90,14 @@
         <app-show-book></app-show-book>
          <button type="button" mdbBtn color="primary" (click)="updateGrid()" mdbWavesEffect>Show More</button>
         <app-show-book2></app-show-book2>
+        <app-show-book3></app-show-book3>
             </div>
         </div>
       </div>
     </div>
+    
 
+    
   </main>
   <app-footer></app-footer>
   <!--Main Layout-->

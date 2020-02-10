@@ -31,7 +31,7 @@ export class ShowBookComponent implements OnInit {
           this.bookList.push(book as IBook)
         })
     })
-    this.router.navigate(['\home']);
+    this.router.navigate(['']);
     // .subscribe(data => {
     //             console.log(data[0].$key)
     //           if(data[0])

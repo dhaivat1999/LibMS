@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap'; 
 import { IUser } from './../../interfaces/users';
 import { UserService } from './../../services/user.service';
@@ -6,14 +6,21 @@ import { FirebaseServiceService } from './../../services/firebase-service.servic
 import { AuthService } from './../../services/auth.service';
 import { BehavesubService } from './../../services/behavesub.service';
 import { Router } from '@angular/router';
+// import { Subscription } from 'rxjs';
+// import { Observable } from 'rxjs';
+// import {timer} from 'rxjs';
+// import 'rxjs/add/observable/timer';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  styleUrls: ['./home.component.scss'],
   providers: [NgbCarouselConfig]
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit,OnDestroy   {
+  // public showloader: boolean = false;      
+  // private subscription: Subscription;
+  // private timer: Observable<any>;
   user:IUser[]; 
   userList:IUser[];
   userArray:String[];
@@ -34,7 +41,6 @@ export class HomeComponent implements OnInit {
        
   }
   checkLogin:boolean;
- // images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
   constructor(private firebaseService: FirebaseServiceService,private authService:AuthService,private behaveSub:BehavesubService,private router:Router) {  
    this.behaveSub.gridSize.subscribe((data)=>{
     this.gridSize=data   
@@ -45,9 +51,12 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['\showbook'])
   }
   ngOnInit() {
-      // this.users=this.userService.getUsers();
-      // console.log(this.users);
+     
       this.checkLogin=this.authService.isLoggedIn;
   }
-
+  
+  public ngOnDestroy() {
+  
+  }
+  
 }

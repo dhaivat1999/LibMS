@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from './../environments/environment';
@@ -36,21 +36,17 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
 import {AuthGuard } from './auth.guard';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home/home.component';
-import {ShowBook3Component} from './show-book3/show-book3.component';
+// import {ShowBook3Component} from './show-book3/show-book3.component';
 import { NavbarsComponent } from './navbars/navbars.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    SignupComponent,
-    LogoutComponent,
     FooterComponent,
     Navbar2Component,
     NavbarsComponent,
-    PhoneLoginComponent,
     AdminComponent,
-    HeaderComponent,
-    StatsComponent,
-    ShowBook3Component
+    // ShowBook3Component
     // ShowBook2Component,
     // TestComponent
    
@@ -92,6 +88,9 @@ import { NavbarsComponent } from './navbars/navbars.component';
     // MatDatepickerModule,
     // MatFormFieldModule,
     // MatFormField
+  ],
+  exports:[
+    FooterComponent
   ],
   providers: [
     UserService,

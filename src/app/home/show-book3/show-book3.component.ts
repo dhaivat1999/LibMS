@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IBook, IUser} from './../interfaces/users';
-import { FirebaseServiceService } from './../services/firebase-service.service';
+import { IBook, IUser} from './../../interfaces/users';
+import { FirebaseServiceService } from './../../services/firebase-service.service';
 import { stringify } from '@angular/compiler/src/util';
 @Component({
   selector: 'app-show-book3',

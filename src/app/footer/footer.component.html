@@ -55,10 +55,10 @@
         <div class="col-md-3 mx-auto">
 
           <!-- Links -->
-          <a href="/addbook">
+          <a href="/auth/addbook">
               <h5 class="font-weight-bold text-uppercase mt-3 mb-4" *ngIf="checkLogin == true" >Add Book</h5>
             </a>
-            <a href="/signup">
+            <a href="/non-auth/signup">
               <h5 class="font-weight-bold text-uppercase mt-3 mb-4" *ngIf="checkLogin == false">Sign Up</h5>
         </a>
           <!-- <ul class="list-unstyled">
@@ -85,10 +85,10 @@
         <div class="col-md-3 mx-auto">
 
           <!-- Links -->
-          <a href="/login">
+          <a href="/non-auth/login">
           <h5 class="font-weight-bold text-uppercase mt-3 mb-4" *ngIf="checkLogin == false">Login</h5>
         </a>
-        <a href="/logout">
+        <a href="/auth/logout">
           <h5 class="font-weight-bold text-uppercase mt-3 mb-4" *ngIf="checkLogin == true">Logout</h5>
             </a>
           <!-- <ul class="list-unstyled">

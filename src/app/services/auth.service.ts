@@ -15,7 +15,13 @@ constructor() { }
     return JSON.parse(sessionStorage.getItem('loggedIn') || this.loggedInStatus.toString())
   }
   authLogin(){
-    this.authLoginStatus=true;
+    if(this.isLoggedIn == true)
+    {
+      this.authLoginStatus=true;
+    }
+    else{
+      this.authLoginStatus=false;
+    }
     console.log(this.authLoginStatus)
   }
   get isAuthLogin(){
