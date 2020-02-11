@@ -39,7 +39,7 @@ export class SignupComponent implements OnInit {
                 this.behave.getUserKey(userForm.value.userEmail);
                 this.FirebaseServiceService.addUserToFirebase(userForm.value);
                 this.counter=1;
-                this.router.navigate(['\auth']);
+                this.router.navigate(['\home']);
                 }
                 // this.router.navigate(['\auth'],{queryParams: {delEmail:userForm.value.userEmail}});
               }
@@ -62,7 +62,7 @@ export class SignupComponent implements OnInit {
       else if(this.counter == 0){
         this.flags=false;
         alert("User email already exists, please use another email");
-        this.router.navigate(['\home']);
+        this.router.navigate(['\non-auth\signup']);
       }
    });
 }

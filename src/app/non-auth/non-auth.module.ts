@@ -20,6 +20,10 @@ const routes: Routes = [{
 {
   path: 'signup',
   loadChildren: './signup/signup.module#SignupModule'
+},
+{
+  path:'phonelogin',
+  loadChildren:'./phone-login/phone-login.module#PhoneLoginModule'
 }];
 
 @NgModule({
